@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Patent Penguin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="legalstyle.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+
+    <!-- Begin Nav Bar -->
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="imageedit_3_4727387049.png" alt="logo"></a>
+        </div>
+        <div class="navbar">
+          <div class="icon-bar" onclick="Show()">
+              <i></i>
+              <i></i>
+              <i></i>
+          </div>
+          <ul id="nav-lists">
+              <li class="close"><span onclick="Hide()">×</span></li>
+              <li><a href="index.html" target="_blank">Home</a></li>
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+              <li><a href="#">Service 3</a></li>
+              <li><a href="index.html">Log Out</a></li>
+          </ul>
+        </div>
+    </div>
+    <!-- End Nav bar -->
+    <br><br><br>
+    <div class="body">
+        <p> Feel Free to change this. I made this for the main dash board. It can be deleted or worked to the goals we want. </p>
+        <p>Also, I started a seperate .css file for this page so we can keep them seperate from the landing page.
+    </div>
+
+    <script>
+    var navList = document.getElementById("nav-lists");
+    function Show() {
+    navList.classList.add("_Menus-show");
+    }
+
+    function Hide(){
+    navList.classList.remove("_Menus-show");
+    }
+    </script>
+
+
+  </body>
+</html>

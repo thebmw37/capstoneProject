@@ -1,0 +1,230 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Patent Penguin</title>
+  </head>
+  <body>
+    <div class="parallax">
+      <br><div class="body1"></div> <!-- background -->
+      <br><br>
+      <!-- Type Writer -->
+      <div class="gwriter">
+        <div class="typewriter" align=center style = color:black;font-size:30px;>
+              <p><h2 class = "w1">Bringing Legal Tech out of the 80’s.</h2></p>
+          <!-- End Type Writer -->
+        </div>
+      </div>
+
+
+
+      <br><br><br>
+      <div class="row">
+        <div class="column" style="background-color:white;font-family: fantasy;">
+          <h2><u>Services</u></h2>
+          <p>Your one stop patent document managemnt system.</p>
+          <ul>Reduced Storage Space</ul>
+          <ul>Easier Retrieval</ul>
+          <ul>Better Collaboration</ul>
+          <hr>
+        </div>
+        <div class="column" style="background-color:white;font-family: fantasy;">
+          <h2><a href="#login" onclick="document.getElementById('lg1n').style.display='block'"><u>Log In</u></a></h2>
+          <p>Already a member?</p>
+            <ul>Access to your up-to date work.</ul>
+            <ul>Access to all documents that you have been working on.</ul>
+            <hr>
+        </div>
+        <div class="column" style="background-color:white;font-family: fantasy;">
+          <h2><a href="#signup" onclick="document.getElementById('sgnUp').style.display='block'"><u>Sign Up</u></a></h2>
+          <p>Not a member?</p>
+            <ul>Sign up to access all of our features.</ul>
+            <ul>Your one stop patent document organizer.</ul>
+            <hr>
+        </div>
+      </div>
+      <br><br>
+    </div>
+
+
+
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>Engineers bringing Legal Tech to you.</p>
+    </div><br><br>
+      <div class="rowabout">
+        <div class="columnabout">
+          <div class="cardabout">
+            <!-- <img src="/w3images/team2.jpg" alt="Bryce" style="width:100%; height:75%;"> -->
+            <div class="containerabout">
+              <h2 class="g">Bryce Woods</h2>
+              <p class="titleabout">CEO</p>
+              <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="g">brwo4424@colorado.edu</p>
+              <p><button class="buttonabout"><a href="mailto:brwo4424@colorado.edu?subject=patentpenguin">Contact</a></button></p>
+            </div>
+          </div>
+        </div>
+        <div class="columnabout">
+          <div class="cardabout">
+            <!-- <img src="/w3images/team3.jpg" alt="Garret" style="width:100%;height:75%;"> -->
+            <div class="containerabout">
+              <h2 class="g">Garrett West</h2>
+              <p class="titleabout">CRO(Sales)</p>
+              <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="g">Garrett.West@Colorado.EDU</p>
+              <p ><button class="buttonabout">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="columnabout">
+          <div class="cardabout">
+            <!-- <img src="/w3images/team3.jpg" alt="Angel" style="width:100%;height:75%;"> -->
+            <div class="containerabout">
+              <h2 class="g">Angel Santana</h2>
+              <p class="titleabout">CO UI/UX</p>
+              <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="g">ansa2343@colorado.edu</p>
+              <p><button class="buttonabout">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="columnabout">
+          <div class="cardabout">
+            <!-- <img src="/w3images/team3.jpg" alt="Alden" style="width:100%;height:75%;"> -->
+            <div class="containerabout">
+              <h2 class="g">Alden Maben</h2>
+              <p class="titleabout">CMO</p>
+              <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="g">alma9389@colorado.edu</p>
+              <p><button class="buttonabout">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="columnabout">
+          <div class="cardabout">
+            <!-- <img src="/w3images/team3.jpg" alt="James" style="width:100%;height:75%;"> -->
+            <div class="containerabout">
+              <h2 class="g">James Corrigan</h2>
+              <p class="titleabout">CTO</p>
+              <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="g">jaco1828@colorado.edu</p>
+              <p><button class="buttonabout">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- create login/ basic: no security -->
+
+    <div id="lg1n" class="modallogin">
+      <!-- action="/action_page.php", took this out of form, no backend or php present -->
+      <!-- instead added a redirect page that acts after a login -->
+
+      <form class="modallogin-content animate" action="legal.html" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('lg1n').style.display='none'" class="closelogin" title="Close login">&times;</span>
+          <img src="imageedit_3_4727387049.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Password" name="psw" required>
+
+          <button type="submit" href ="legal.html"=>Login</button>
+          <div style = color:red>
+            <p>Due to legal documents being prcessed, we recommend not to enable this. </p>
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('lg1n').style.display='none'" class="cancelbtn">Cancel</button>
+          <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+        </div>
+      </form>
+    </div>
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('lg1n');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    <!-- End login -->
+
+    <!-- create basic sign up -->
+
+    <div id="sgnUp" class="modalSignup">
+      <!-- action="/action_page.php", took this out of form, no backend or php present -->
+      <!-- instead added a redirect page that acts after a login -->
+
+      <form class="modalSignup-content" action="legal.html">
+        <div class="container">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('sgnUp').style.display='none'" class="modalSignupclose" title="Close Sign Up">&times;</span>
+            <img src="imageedit_3_4727387049.png" alt="Avatar" class="avatar">
+          </div>
+          <h1>Sign Up to become a Patent Penguin User</h1>
+          <hr>
+          <p>Please fill in the following with your accurate information.</p>
+          <label for="email"><b>User Email</b></label>
+          <input type="text" placeholder="Email" name="email" required>
+
+          <label for="psw"><b>User Password</b></label>
+          <input type="password" placeholder="Password" name="psw" required>
+
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          <div style = color:red>
+            <p>Due to legal documents being prcessed, we recommend not to enable this. </p>
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+
+          <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('sgnUp').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+    // Get the modal
+    var modal2 = document.getElementById('sgnUp');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
+    </script>
+    <!-- end basic sign up -->
+
+
+    <!-- <br><br><br><br> -->
+    <footer>
+      <hr>
+      <h3>&copy <u>Patent Penguin 2020</u></h3>
+      <hr>
+    </footer>
+  </body>
+</html>
