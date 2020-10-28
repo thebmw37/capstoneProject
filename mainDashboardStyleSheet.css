@@ -2,13 +2,14 @@ body {
   margin: 0;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .topnav {
   overflow: hidden;
   height: 80px;
   margin-left: 80px;
-  background-color: #474747;
+  background-color: #c7401f;
 }
 
 .topnav input[type=search] {
@@ -33,7 +34,7 @@ body {
 
 .topnav a.right {
   float: right;
-  background-color: #474747;
+  background-color: #c7401f;
   height: 60px;
   padding: 14px 16px;
   line-height: 50px;
@@ -41,11 +42,12 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
+  font-family: fantasy;
 }
 
 .topnav a:hover {
   opacity: 0.8;
-  background-color : #636363;
+  background-color : black;
   cursor: pointer;
 }
 
@@ -55,7 +57,8 @@ body {
   height: 100%;
   position: fixed;
   top: 0px;
-  background-color: #474747;
+  background-color: #c7401f;
+  font-family: fantasy;
 }
 
 .leftnav a {
@@ -68,7 +71,7 @@ body {
 
 .leftnav a:hover {
   opacity: 0.8;
-  background-color : #636363;
+  background-color : black;
   cursor: pointer;
 }
 
@@ -76,7 +79,7 @@ body {
   visibility: hidden;
   width: 120px;
   height: 30px;
-  background-color: black;
+  background-color: #c7401f;
   color: #fff;
   text-align: center;
   border-radius: 6px;
