@@ -92,7 +92,7 @@ body{
   width: 100%;
   /* width: 25%; */
   padding: 10px;
-	
+
 }
 .column {
   float: left;
@@ -129,8 +129,8 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
-  background-color: black;
+button{
+  background-color: white;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -241,18 +241,6 @@ span.psw {
 
 /* end login */
 
-.columnabout {
-  float: left;
-  width: 20%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.cardabout {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
 .about-section {
   font-family: fantasy;
   flex: 10%;
@@ -263,48 +251,40 @@ span.psw {
   font-size: 30px;
 }
 
-.containerabout {
-  padding: 0 16px;
-}
-
-.containerabout::after, .rowabout::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.rowabout{
-  /* background-image: url('b.png'); */
-  /* background-position: center; */
-  background-color: white;
-}
-
-.titleabout {
+/* The grid: Three equal columns that floats next to each other */
+.columnabout {
+  float: left;
+  width: 20%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
   color: black;
 }
+.columnabout:hover{
+  opacity: 0.8;
+}
 
-.buttonabout {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
+.containerTababout {
+  padding: 20px;
   color: white;
-  background-color: white;
   text-align: center;
+}
+
+/* Clear floats after the columns */
+.rowabout:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtnabout {
+  float: right;
+  color: white;
+  font-size: 35px;
   cursor: pointer;
-  width: 100%;
 }
-
-.buttonabout:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .columnabout {
-    width: 100%;
-    display: block;
-  }
-}
-
 /* footer */
 footer {
    left: 0;
