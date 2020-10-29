@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+	<link href="mainDashboardStyleSheet.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
     <title>Patent Penguin</title>
   </head>
   <body>
     <div class="parallax">
-      <br><div class="body1"></div> <!-- background -->
+      <br>
+	  <div class="body1"></div> <!-- background -->
       <br><br>
       <!-- Type Writer -->
       <div class="gwriter">
@@ -18,22 +20,58 @@
           <!-- End Type Writer -->
         </div>
       </div>
+      
       <br><br><br>
+	      
 	  <div class ="row">
-	  	<div class="columnServices" style="background-color:#e8866d;font-family: fantasy;">
-		  	<h1><u>Services</u></h1>
+	  	<div class="columnServices" style="background-color:black;font-family: fantasy;">
+		  	   <div class="row">
+                <div class="column" style="color:white;">
+                  <ul>
+	                <h2><img src="img/dashboard.png" style="width: 54px; height: 42px; margin-top: 19px;"><span class="tooltiptext">	Dashboard</span></h2>
+	                <p>Explain</p>
+                    <br>
+		  			<h2><img src="img/communication.png" style="width: 55px; height:49px; margin-top: 15px;"><span class="tooltiptext">	Communication</h2></span>
+		  			<p>Explain</p>
+                    <br>
+		  			<h2><img src="img/applications.png" style="width: 55px; height:49px; margin-top: 15px;"><span class="tooltiptext">	Applications</h2></span>
+		  			<p>Explain</p>
+                    <br>
+		  			<h2><img src="img/notifications.png" style="width: 50px; height:49px; margin-top: 15px;"><span class="tooltiptext">Notifications</h2></span>
+		  			<p>Explain</p>
+                    <br>
+                  </ul>
+                </div>
+                <div class="column" style="color:white">
+                  <ul>
+		  			<h2><img src="img/uspto.png" style="width: 54px; height:51px; margin-top: 15px;"><span class="tooltiptext">		USPTO</h2></span>
+		  			<p>Explain</p>
+                    <br>
+				  	<h2><img src="img/editor.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">	Editor</h2></span>
+		  			<p>Explain</p>
+                    <br>
+				  	<h2><img src="img/help.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">		Help</h2></span>
+		  			<p>Explain</p>				  	
+                    <br>
+				  	<h2><img src="img/contact.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">		Contact</h2></span>
+		  			<p>Explain</p>
+                    <br>
+                  </ul>
+                </div>
+              </div>
         </div>
       </div>
+     <div class="parallax">
       <br>
       <div class="row">
-        <div class="column" style="background-color:#e8866d;font-family: fantasy;">
+        <div class="column" style="background-color:white;font-family: fantasy;" align="center">
 	      <h2>Already a member?    <a href="#login" onclick="document.getElementById('lg1n').style.display='block'"><u>Log In</u></a></h2>
           	<ul>Your one stop patent document managemnt system.</ul>
             <ul>Access your up-to date work.</ul>
             <ul>Reduced Storage Space, Better Collaboration</ul>
             <hr>
         </div>
-        <div class="column" style="background-color:#e8866d;font-family: fantasy;">
+        <div class="column" style="background-color:white;font-family: fantasy;" align="center">
           <h2>Not a member? <a href="#signup" onclick="document.getElementById('sgnUp').style.display='block'"><u>Sign Up</u></a></h2>
             <ul>Sign up to access all of our features.</ul>
             <ul>Your one stop patent document organizer.</ul>
@@ -41,18 +79,19 @@
             <hr>
         </div>
       </div>
-	</div>
+      <br><br>
 
-<div class="parallax">
+
+
     <div class="about-section">
 	    <h1>About Us</h1>
         <p>Engineers bringing Legal Tech to you.</p>
     </div>
       <div class="rowabout">
         <div class="columnabout">
-          <div class="cardabout">
+          <div class="cardabout" align="center">
             <div class="containerabout">
-              <h2 class="g">Bryce Woods</h2>
+              <h2 class="g" >Bryce Woods</h2>
               <p class="titleabout" align="center">CEO</p>
               <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
               <p class="g">brwo4424@colorado.edu</p>
@@ -61,7 +100,7 @@
           </div>
         </div>
         <div class="columnabout">
-          <div class="cardabout">
+          <div class="cardabout" align="center">
             <div class="containerabout">
               <h2 class="g">Garrett West</h2>
               <p class="titleabout" align="center">CRO(Sales)</p>
@@ -72,7 +111,7 @@
           </div>
         </div>
         <div class="columnabout">
-          <div class="cardabout">
+          <div class="cardabout" align="center">
             <div class="containerabout">
               <h2 class="g">Angel Santana</h2>
               <p class="titleabout" align="center">   CO UI/UX</p>
@@ -83,7 +122,7 @@
           </div>
         </div>
         <div class="columnabout">
-          <div class="cardabout">
+          <div class="cardabout" align="center">
             <div class="containerabout">
               <h2 class="g">Alden Maben</h2>
               <p class="titleabout" align="center">CMO</p>
@@ -95,7 +134,7 @@
         </div>
         <div class="columnabout">
           <div class="cardabout">
-            <div class="containerabout">
+            <div class="containerabout" align="center">
               <h2 class="g">James Corrigan</h2>
               <p class="titleabout" align="center">CTO</p>
               <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
@@ -104,7 +143,12 @@
             </div>
           </div>
         </div>
-      </div>
+
+     <footer>
+      <hr>
+      <h3>&copy <u>Patent Penguin 2020</u></h3>
+      <hr>
+    </footer>
      </div>
 
     <!-- create login/ basic: no security -->
@@ -210,10 +254,5 @@
 
 
     <!-- <br><br><br><br> -->
-    <footer>
-      <hr>
-      <h3>&copy <u>Patent Penguin 2020</u></h3>
-      <hr>
-    </footer>
   </body>
 </html>

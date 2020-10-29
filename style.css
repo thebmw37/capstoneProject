@@ -30,7 +30,7 @@ body{
   height: 300px;
   background-position: center;
   /* background-color: #FD5E36; */
-  background-color: #e8866d;
+  background-color: white;
   background-image: url('imageedit_3_4727387049.png');
   /* credit for our back ground */
   /* https://www.google.com/search?q=law+background+images&tbm=isch&ved=2ahUKEwi5ht2lvMzsAhUCNK0KHWQ1DIkQ2-cCegQIABAA&oq=law+background+images&gs_lcp=CgNpbWcQAzIECAAQQzICCAAyAggAMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB5Q65YCWMmZAmDpmgJoAHAAeACAAUSIAcEBkgEBM5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=J7iTX_nWGILotAXk6rDICA&bih=789&biw=1440&rlz=1C5CHFA_enUS727US727#imgrc=_-w8y2R4Q5_lwM&imgdii=5IehGKTM92sXOM */
@@ -53,7 +53,7 @@ body{
 .gwriter{
   flex: 10%;
   padding: 10px;
-  background-color: #e8866d;
+  background-color: white;
   opacity: 0.9;
 }
  /*Begin type writer */
@@ -275,7 +275,7 @@ span.psw {
 .rowabout{
   /* background-image: url('b.png'); */
   /* background-position: center; */
-  background-color: #e8866d;
+  background-color: white;
 }
 
 .titleabout {
@@ -310,7 +310,7 @@ footer {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #e8866d;
+   background-color: black;
    color: white;
    text-align: center;
 }
