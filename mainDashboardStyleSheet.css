@@ -9,7 +9,7 @@ body {
   overflow: hidden;
   height: 80px;
   margin-left: 80px;
-  background-color: #c7401f;
+  background-color: black;
 }
 
 .topnav input[type=search] {
@@ -34,7 +34,7 @@ body {
 
 .topnav a.right {
   float: right;
-  background-color: #c7401f;
+  background-color: black;
   height: 60px;
   padding: 14px 16px;
   line-height: 50px;
@@ -57,7 +57,7 @@ body {
   height: 100%;
   position: fixed;
   top: 0px;
-  background-color: #c7401f;
+  background-color: black;
   font-family: fantasy;
 }
 
@@ -79,7 +79,7 @@ body {
   visibility: hidden;
   width: 120px;
   height: 30px;
-  background-color: #c7401f;
+  background-color: black;
   color: #fff;
   text-align: center;
   border-radius: 6px;
