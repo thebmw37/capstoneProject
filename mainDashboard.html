@@ -4,6 +4,7 @@
     <title>Main Dashboard</title>
     <link rel="icon" href="img/logo-white.png">
     <link href="mainDashboardStyleSheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -30,35 +31,39 @@
     </div>
 
     <!-- Page Title -->
-    <h1 style="margin-left: 120px;">Dashboard</h1>
+    <h1 style="margin-left: 120px; display: inline-block;">Dashboard</h1>
+
+    <!-- Settings -->
+    <button class="settings-button" style="display: inline-block; float: right; margin-right: 50px; margin-top: 15px; font-size: 25px;"><i class="fa fa-cog"></i></button>
 
     <!-- Timeline -->
     <div id="timeline" class="module" align="left" style="height: 480px; margin-left: 130px; display: inline-block;">
-      <h3 style="margin-top: 0px;">Timeline</h3>
+      <h3 style="margin-top: 0px; display: inline-block;">Timeline</h3>
+      <button class="settings-button" style="display: inline-block; float: right; font-size: 20px; background-color: #f2f2f2"><i class="fa fa-ellipsis-h"></i></button>
 
       <h4>Case 165</h4>
       <input type="range" min="0" max="100" value="22" class="slider" id="range0"></input>
-      <h6 style="display: inline-block;">Draft</h6>
-      <h6 id="submit0" style="display: inline-block;">Submit</h6>
-      <h6 id="editing0" style="display: inline-block;">Editing</h6>
-      <h6 id="review0" style="display: inline-block;">Review</h6>
-      <h6 id="approval0" style="display: inline-block;">Approval</h6>
+      <h6 style="display: inline-block;">4/3/20</h6>
+      <h6 id="submit0" style="display: inline-block;">6/3/20</h6>
+      <h6 id="editing0" style="display: inline-block;">8/3/20</h6>
+      <h6 id="review0" style="display: inline-block;">10/3/20</h6>
+      <h6 id="approval0" style="display: inline-block;">12/3/20</h6>
 
       <h4>Case 190</h4>
-      <input type="range" min="0" max="100" value="50" class="slider" id="range0"></input>
-      <h6 style="display: inline-block;">Draft</h6>
-      <h6 id="submit1" style="display: inline-block;">Submit</h6>
-      <h6 id="editing1" style="display: inline-block;">Editing</h6>
-      <h6 id="review1" style="display: inline-block;">Review</h6>
-      <h6 id="approval1" style="display: inline-block;">Approval</h6>
+      <input type="range" min="0" max="100" value="52" class="slider" id="range0"></input>
+      <h6 style="display: inline-block;">6/22/20</h6>
+      <h6 id="submit1" style="display: inline-block;">8/22/20</h6>
+      <h6 id="editing1" style="display: inline-block;">10/22/20</h6>
+      <h6 id="review1" style="display: inline-block;">12/22/20</h6>
+      <h6 id="approval1" style="display: inline-block;">2/22/21</h6>
 
       <h4>Case 232</h4>
       <input type="range" min="0" max="100" value="0" class="slider" id="range0"></input>
-      <h6 style="display: inline-block;">Draft</h6>
-      <h6 id="submit2" style="display: inline-block;">Submit</h6>
-      <h6 id="editing2" style="display: inline-block;">Editing</h6>
-      <h6 id="review2" style="display: inline-block;">Review</h6>
-      <h6 id="approval2" style="display: inline-block;">Approval</h6>
+      <h6 style="display: inline-block;">9/9/20</h6>
+      <h6 id="submit2" style="display: inline-block;">11/9/20</h6>
+      <h6 id="editing2" style="display: inline-block;">2/9/21</h6>
+      <h6 id="review2" style="display: inline-block;">5/9/21</h6>
+      <h6 id="approval2" style="display: inline-block;">7/9/21</h6>
 
     </div>
 
@@ -93,7 +98,8 @@
 
     <!-- Messages -->
     <div id="messages" class="module" align="left" style="height: 300px; margin-left: 20px; margin-top: 20px; display: inline-block;">
-      <h3 style="display: table; margin-top: 0px;">New Messages</h3>
+      <h3 style="display: table; margin-top: 0px; display: inline-block;">New Messages</h3>
+      <button class="settings-button" style="display: inline-block; float: right; font-size: 20px; margin-right: 0px; margin-top: -10px; background-color: #f2f2f2"><i class="fa fa-ellipsis-h"></i></button>
 
       <hr>
       <h3 style="display: inline-block;">Carl:</h3>
