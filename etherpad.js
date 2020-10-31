@@ -14,8 +14,8 @@
       'userColor'         : false,
       'hideQRCode'        : false,
       'alwaysShowChat'    : false,
-      'width'             : 100,
-      'height'            : 100,
+      'width'             : 1000,
+      'height'            : 1000,
       'border'            : 0,
       'borderStyle'       : 'solid',
       'toggleTextOn'      : 'Disable Rich-text',
@@ -23,11 +23,11 @@
       'plugins'           : {},
       'rtl'               : false
     };
-    
+
     var $self = this;
     if (!$self.length) return;
     if (!$self.attr('id')) throw new Error('No "id" attribute');
-    
+
     var useValue = $self[0].tagName.toLowerCase() == 'textarea';
     var selfId = $self.attr('id');
     var epframeId = 'epframe'+ selfId;
@@ -36,7 +36,7 @@
       if ( options ) {
         $.extend( settings, options );
       }
-      
+
       var pluginParams = '';
       for(var option in settings.plugins) {
         pluginParams += '&' + option + '=' + settings.plugins[option]
@@ -62,12 +62,12 @@
           iFrameLink = iFrameLink +'" style="border:' + settings.border;
           iFrameLink = iFrameLink +'; border-style:' + settings.borderStyle;
           iFrameLink = iFrameLink +';" width="' + '100%';//settings.width;
-          iFrameLink = iFrameLink +'" height="' + settings.height; 
+          iFrameLink = iFrameLink +'" height="' + settings.height;
           iFrameLink = iFrameLink +'"></iframe>';
-      
-      
+
+
       var $iFrameLink = $(iFrameLink);
-      
+
       if (useValue) {
         var $toggleLink = $('<a href="#'+ selfId +'">'+ settings.toggleTextOn +'</a>').click(function(){
           var $this = $(this);
@@ -82,7 +82,7 @@
           .after($iFrameLink)
         ;
       }
-      else {      
+      else {
         $self.html(iFrameLink);
       }
     }
@@ -95,19 +95,19 @@
 
       // perform an ajax call on contentsUrl and write it to the parent
       $.get(contentsUrl, function(data) {
-        
+
         if (target.is(':input')) {
           target.val(data).show();
         }
         else {
           target.html(data);
         }
-        
+
         $('#'+ epframeId).remove();
       });
     }
-    
-    
+
+
     return $self;
   };
 })( jQuery );
