@@ -1,5 +1,5 @@
 body{
-  background-color: white;
+  background-color: black;
   /* background-image: url('b.png'); */
   /* background-position: center; */
   height: 100%;
@@ -7,7 +7,7 @@ body{
 
 .parallax {
   /* The image used */
-  background-image: url('b.png');
+  background-image: url('w.png');
 
   /* Full height */
   height: 100%;
@@ -39,7 +39,7 @@ body{
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .as{
   align:center;
@@ -87,18 +87,18 @@ body{
 }
 
 /* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  /* width: 25%; */
-  padding: 10px;
-}
-.column1{
+.columnServices{
   float: right;
-  width: 50%;
+  width: 100%;
   /* width: 25%; */
   padding: 10px;
 
+}
+.column {
+  float: left;
+  width: 50%;
+  /* width: 25%; */
+  padding: 10px;
 }
 
 
@@ -111,7 +111,7 @@ body{
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column,.column1 {
+  .column,.columnServices {
     width: 100%;
   }
 }
@@ -129,7 +129,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
+button{
   background-color: black;
   color: white;
   padding: 14px 20px;
@@ -241,74 +241,50 @@ span.psw {
 
 /* end login */
 
-.columnabout {
-  float: left;
-  width: 20%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.cardabout {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
 .about-section {
-  /* background-image: url('b.png'); */
-  /* background-position: center; */
   font-family: fantasy;
   flex: 10%;
   padding: 10px;
-  background-color: white;
-  /* opacity: 0.9; */
+  background-color: black;
   text-align: center;
-  color: black;
-  font-size: 30px;
-  /* opacity: 0.8; */
-}
-
-.containerabout {
-  padding: 0 16px;
-}
-
-.containerabout::after, .rowabout::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.rowabout{
-  /* background-image: url('b.png'); */
-  /* background-position: center; */
-  background-color: white;
-}
-
-.titleabout {
-  color: grey;
-}
-
-.buttonabout {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
   color: white;
-  background-color: #000;
+  font-size: 30px;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.columnabout {
+  float: left;
+  width: 20%;
+  padding: 50px;
   text-align: center;
+  font-size: 25px;
   cursor: pointer;
-  width: 100%;
+  color: black;
+}
+.columnabout:hover{
+  opacity: 0.8;
 }
 
-.buttonabout:hover {
-  background-color: #555;
+.containerTababout {
+  padding: 20px;
+  color: white;
+  text-align: center;
 }
 
-@media screen and (max-width: 650px) {
-  .columnabout {
-    width: 100%;
-    display: block;
-  }
+/* Clear floats after the columns */
+.rowabout:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
+/* Closable button inside the container tab */
+.closebtnabout {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
 /* footer */
 footer {
    left: 0;
