@@ -14,13 +14,8 @@
       'userColor'         : false,
       'hideQRCode'        : false,
       'alwaysShowChat'    : false,
-<<<<<<< HEAD
       'width'             : 1000,
       'height'            : 1000,
-=======
-      'width'             : 100,
-      'height'            : 100,
->>>>>>> 26660be3cbf331af52ecfcbd4b1dfcc251ce65a0
       'border'            : 0,
       'borderStyle'       : 'solid',
       'toggleTextOn'      : 'Disable Rich-text',
@@ -28,19 +23,11 @@
       'plugins'           : {},
       'rtl'               : false
     };
-<<<<<<< HEAD
 
     var $self = this;
     if (!$self.length) return;
     if (!$self.attr('id')) throw new Error('No "id" attribute');
 
-=======
-    
-    var $self = this;
-    if (!$self.length) return;
-    if (!$self.attr('id')) throw new Error('No "id" attribute');
-    
->>>>>>> 26660be3cbf331af52ecfcbd4b1dfcc251ce65a0
     var useValue = $self[0].tagName.toLowerCase() == 'textarea';
     var selfId = $self.attr('id');
     var epframeId = 'epframe'+ selfId;
@@ -49,11 +36,7 @@
       if ( options ) {
         $.extend( settings, options );
       }
-<<<<<<< HEAD
 
-=======
-      
->>>>>>> 26660be3cbf331af52ecfcbd4b1dfcc251ce65a0
       var pluginParams = '';
       for(var option in settings.plugins) {
         pluginParams += '&' + option + '=' + settings.plugins[option]
@@ -79,21 +62,12 @@
           iFrameLink = iFrameLink +'" style="border:' + settings.border;
           iFrameLink = iFrameLink +'; border-style:' + settings.borderStyle;
           iFrameLink = iFrameLink +';" width="' + '100%';//settings.width;
-<<<<<<< HEAD
           iFrameLink = iFrameLink +'" height="' + settings.height;
           iFrameLink = iFrameLink +'"></iframe>';
 
 
       var $iFrameLink = $(iFrameLink);
 
-=======
-          iFrameLink = iFrameLink +'" height="' + settings.height; 
-          iFrameLink = iFrameLink +'"></iframe>';
-      
-      
-      var $iFrameLink = $(iFrameLink);
-      
->>>>>>> 26660be3cbf331af52ecfcbd4b1dfcc251ce65a0
       if (useValue) {
         var $toggleLink = $('<a href="#'+ selfId +'">'+ settings.toggleTextOn +'</a>').click(function(){
           var $this = $(this);
@@ -108,11 +82,7 @@
           .after($iFrameLink)
         ;
       }
-<<<<<<< HEAD
       else {
-=======
-      else {      
->>>>>>> 26660be3cbf331af52ecfcbd4b1dfcc251ce65a0
         $self.html(iFrameLink);
       }
     }
@@ -125,32 +95,19 @@
 
       // perform an ajax call on contentsUrl and write it to the parent
       $.get(contentsUrl, function(data) {
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 26660be3cbf331af52ecfcbd4b1dfcc251ce65a0
         if (target.is(':input')) {
           target.val(data).show();
         }
         else {
           target.html(data);
         }
-<<<<<<< HEAD
 
         $('#'+ epframeId).remove();
       });
     }
 
 
-=======
-        
-        $('#'+ epframeId).remove();
-      });
-    }
-    
-    
->>>>>>> 26660be3cbf331af52ecfcbd4b1dfcc251ce65a0
     return $self;
   };
 })( jQuery );

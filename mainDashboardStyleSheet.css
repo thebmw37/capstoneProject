@@ -105,7 +105,7 @@ body {
   border-style: solid;
   border-color: transparent black transparent transparent;
 }
-<<<<<<< HEAD
+
 /* Navbar container */
 .navbar {
   overflow: hidden;
@@ -183,7 +183,7 @@ body {
 .specialColorinfo{
     /* Whatever color  you want */
     background-color: #808080 ;
-=======
+}
 
 .module {
   border-radius: 5px;
@@ -268,5 +268,4 @@ body {
   text-align: left;
   background-color: #4CAF50;
   color: white;
->>>>>>> 26660be3cbf331af52ecfcbd4b1dfcc251ce65a0
 }
