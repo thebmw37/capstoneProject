@@ -4,119 +4,159 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+	<link href="mainDashboardStyleSheet.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
     <title>Patent Penguin</title>
   </head>
   <body>
     <div class="parallax">
-      <br><div class="body1"></div> <!-- background -->
+      <br>
+	  <div class="body1"></div> <!-- background -->
       <br><br>
       <!-- Type Writer -->
       <div class="gwriter">
-        <div class="typewriter" align=center style = color:black;font-size:30px;>
+        <div class="typewriter" align="center" style = "color:black;font-size:30px;">
               <p><h2 class = "w1">Bringing Legal Tech out of the 80’s.</h2></p>
           <!-- End Type Writer -->
         </div>
       </div>
 
-
-
       <br><br><br>
-      <div class="row">
-        <div class="column" style="background-color:white;font-family: fantasy;">
-          <h2><u>Services</u></h2>
-          <p>Your one stop patent document managemnt system.</p>
-          <ul>Reduced Storage Space</ul>
-          <ul>Easier Retrieval</ul>
-          <ul>Better Collaboration</ul>
-          <hr>
+
+	  <div class ="row">
+	  	<div class="columnServices" style="background-color:black;font-family: fantasy;">
+		  	   <div class="row">
+                <div class="column" style="color:white;">
+                  <ul>
+	                <h2 ><img src="img/dashboard.png" style="width: 54px; height: 42px; margin-top: 19px;"><span class="tooltiptext"></span>    Dashboard</h2>
+	                <p>Main page that will have a variety of <u style="color:red">customization</u> that will be tailored to your needs.</p>
+                  <p><u style="color:red">Including</u>: Application deadlines, an organized list of applications and their status', new messages, and notifications.</p>
+                    <br>
+      		  			<h2><img src="img/applications.png" style="width: 55px; height:49px; margin-top: 15px;"><span class="tooltiptext"></span>		Applications</h2>
+      		  			<p>Have all your <u style="color:red">basic application information</u> at hand (e.g., Application ID, Title, Attorney on Project, Status, and Deadline).</p>
+                  <p>Need more application information? Click on any application to show details associated with it.</p>
+                  <p><u style="color:red">Including</u>: attached client information, specialist information(if applicable), related documents(which you add or remove), and much more. </p>
+                  <br>
+                  </ul>
+                </div>
+                <div class="column" style="color:white">
+                  <ul>
+      		  			<h2><img src="img/uspto.png" style="width: 54px; height:51px; margin-top: 15px;"><span class="tooltiptext"></span>		USPTO</h2>
+      		  			<p>Have the current status of all applications submitted <u style="color:red">BY YOU</u> available. </p>
+                  <p>See messages from the USPTO regarding the application that needs your attention.</p>
+                  <br>
+      				  	<h2><img src="img/editor.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext"></span>		Editor</h2>
+      		  			<p>View recent edits that have been made to any documents.</p>
+                  <p><u style="color:red">Edit right there and then</u>. Create new documents from templates or import a new documents as needed.</p>
+                  <p>With document security, and enhanced collaboration, this will allow for easy retrieval and sending of documents</p>
+                  <br>
+                  </ul>
+                </div>
+              </div>
         </div>
-        <div class="column" style="background-color:white;font-family: fantasy;">
-          <h2><a href="#login" onclick="document.getElementById('lg1n').style.display='block'"><u>Log In</u></a></h2>
-          <p>Already a member?</p>
-            <ul>Access to your up-to date work.</ul>
-            <ul>Access to all documents that you have been working on.</ul>
+      </div>
+     <div class="parallax">
+      <br>
+      <div class="row">
+        <div class="column" style="background-color:white;font-family: fantasy;" align="center">
+	      <h2>Already a member?    <a href="#login" onclick="document.getElementById('lg1n').style.display='block'"><u>Log In</u></a></h2>
+            <ul>Access your up-to date work.</ul>
+            <ul>Reduced Storage Space, Better Collaboration</ul>
+            <ul>Your one stop patent document managemnt system.</ul>
             <hr>
         </div>
-        <div class="column" style="background-color:white;font-family: fantasy;">
-          <h2><a href="#signup" onclick="document.getElementById('sgnUp').style.display='block'"><u>Sign Up</u></a></h2>
-          <p>Not a member?</p>
+        <div class="column" style="background-color:white;font-family: fantasy;" align="center">
+          <h2>Not a member? <a href="#signup" onclick="document.getElementById('sgnUp').style.display='block'"><u>Sign Up</u></a></h2>
             <ul>Sign up to access all of our features.</ul>
             <ul>Your one stop patent document organizer.</ul>
+            <ul>Recieve, track, manage and store all your documents. </ul>
             <hr>
         </div>
       </div>
       <br><br>
+    <div class="about-section">
+	    <h1>About Us</h1>
+        <p>Engineers bringing Legal Tech to you.</p>
+    </div>
+<br><br>
+    <div class = "g" style="text-align:center; font-size:35px;font-family: fantasy;">
+      <h1>Our Team</h1>
+      <hr>
+    </div>
+
+    <!-- 5 columns -->
+    <div class="rowabout g">
+      <div class="columnabout" onclick="openTababout('b1');" style="background:white;">
+        Chief Executive Officer
+      </div>
+      <div class="columnabout" onclick="openTababout('b2');" style="background:white;">
+        Chief Risk Officer (Sales)
+      </div>
+      <div class="columnabout" onclick="openTababout('b3');" style="background:white;">
+        Chief Officer UI/UX
+      </div>
+      <div class="columnabout" onclick="openTababout('b4');" style="background:white;">
+        Chief Marketing Officer
+      </div>
+      <div class="columnabout" onclick="openTababout('b5');" style="background:white;">
+        Chief Tech. Officer
+      </div>
     </div>
 
 
+    <!-- Full-width columns: (hidden by default) -->
+    <div id="b1" class="containerTababout" style="display:none;background:black;">
+      <span onclick="this.parentElement.style.display='none'" class="closebtnabout">&times;</span>
+      <h2>Bryce Woods</h2>
+      <h3><a href="mailto:brwo4424@colorado.edu?subject=patentpenguin">Contact Me</a></h3>
+      <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+    </div>
 
-    <div class="about-section">
-        <h1>About Us</h1>
-        <p>Engineers bringing Legal Tech to you.</p>
-    </div><br><br>
-      <div class="rowabout">
-        <div class="columnabout">
-          <div class="cardabout">
-            <!-- <img src="/w3images/team2.jpg" alt="Bryce" style="width:100%; height:75%;"> -->
-            <div class="containerabout">
-              <h2 class="g">Bryce Woods</h2>
-              <p class="titleabout">CEO</p>
-              <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p class="g">brwo4424@colorado.edu</p>
-              <p><button class="buttonabout"><a href="mailto:brwo4424@colorado.edu?subject=patentpenguin">Contact</a></button></p>
-            </div>
-          </div>
-        </div>
-        <div class="columnabout">
-          <div class="cardabout">
-            <!-- <img src="/w3images/team3.jpg" alt="Garret" style="width:100%;height:75%;"> -->
-            <div class="containerabout">
-              <h2 class="g">Garrett West</h2>
-              <p class="titleabout">CRO(Sales)</p>
-              <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p class="g">Garrett.West@Colorado.EDU</p>
-              <p ><button class="buttonabout">Contact</button></p>
-            </div>
-          </div>
-        </div>
-        <div class="columnabout">
-          <div class="cardabout">
-            <!-- <img src="/w3images/team3.jpg" alt="Angel" style="width:100%;height:75%;"> -->
-            <div class="containerabout">
-              <h2 class="g">Angel Santana</h2>
-              <p class="titleabout">CO UI/UX</p>
-              <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p class="g">ansa2343@colorado.edu</p>
-              <p><button class="buttonabout">Contact</button></p>
-            </div>
-          </div>
-        </div>
-        <div class="columnabout">
-          <div class="cardabout">
-            <!-- <img src="/w3images/team3.jpg" alt="Alden" style="width:100%;height:75%;"> -->
-            <div class="containerabout">
-              <h2 class="g">Alden Maben</h2>
-              <p class="titleabout">CMO</p>
-              <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p class="g">alma9389@colorado.edu</p>
-              <p><button class="buttonabout">Contact</button></p>
-            </div>
-          </div>
-        </div>
-        <div class="columnabout">
-          <div class="cardabout">
-            <!-- <img src="/w3images/team3.jpg" alt="James" style="width:100%;height:75%;"> -->
-            <div class="containerabout">
-              <h2 class="g">James Corrigan</h2>
-              <p class="titleabout">CTO</p>
-              <p class="g">Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p class="g">jaco1828@colorado.edu</p>
-              <p><button class="buttonabout">Contact</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="b2" class="containerTababout" style="display:none;background:black">
+      <span onclick="this.parentElement.style.display='none'" class="closebtnabout">&times;</span>
+      <h2>Garret West</h2>
+      <h3><a href="mailto:Garrett.West@Colorado.EDU?subject=patentpenguin">Contact Me</a></h3>
+      <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+    </div>
+
+    <div id="b3" class="containerTababout" style="display:none;background:black">
+      <span onclick="this.parentElement.style.display='none'" class="closebtnabout">&times;</span>
+      <h2>Angel Santana Hernandez</h2>
+      <h3><a href="mailto:ansa2343@colorado.edu?subject=Patent Penguin">Contact Me</a></h3>
+      <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+    </div>
+    <div id="b4" class="containerTababout" style="display:none;background:black">
+      <span onclick="this.parentElement.style.display='none'" class="closebtnabout">&times;</span>
+      <h2>Alden Maben</h2>
+      <h3><a href="mailto:alma9389@colorado.edu?subject=Patent Penguin">Contact Me</a></h3>
+      <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+    </div>
+    <div id="b5" class="containerTababout" style="display:none;background:black">
+      <span onclick="this.parentElement.style.display='none'" class="closebtnabout">&times;</span>
+      <h2>James Corrigan</h2>
+      <h3><a href="mailto:jaco1828@colorado.edu?subject=Patent Penguin">Contact Me</a></h3>
+      <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+    </div>
+
+
+    <script>
+    function openTababout(tabName) {
+      var i, x;
+      x = document.getElementsByClassName("containerTababout");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(tabName).style.display = "block";
+    }
+    </script>
+
+
+    <footer>
+       <hr>
+       <h3>&copy <u>Patent Penguin 2020</u></h3>
+       <hr>
+     </footer></div>
+
 
     <!-- create login/ basic: no security -->
 
@@ -124,7 +164,7 @@
       <!-- action="/action_page.php", took this out of form, no backend or php present -->
       <!-- instead added a redirect page that acts after a login -->
 
-      <form class="modallogin-content animate" action="legal.html" method="post">
+      <form class="modallogin-content animate" action="mainDashboard.html" method="post">
         <div class="imgcontainer">
           <span onclick="document.getElementById('lg1n').style.display='none'" class="closelogin" title="Close login">&times;</span>
           <img src="imageedit_3_4727387049.png" alt="Avatar" class="avatar">
@@ -137,7 +177,7 @@
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Password" name="psw" required>
 
-          <button type="submit" href ="legal.html"=>Login</button>
+          <button type="submit" href ="mainDashboard.html"=>Login</button>
           <div style = color:red>
             <p>Due to legal documents being prcessed, we recommend not to enable this. </p>
           </div>
@@ -172,7 +212,7 @@
       <!-- action="/action_page.php", took this out of form, no backend or php present -->
       <!-- instead added a redirect page that acts after a login -->
 
-      <form class="modalSignup-content" action="legal.html">
+      <form class="modalSignup-content" action="mainDashboard.html">
         <div class="container">
           <div class="imgcontainer">
             <span onclick="document.getElementById('sgnUp').style.display='none'" class="modalSignupclose" title="Close Sign Up">&times;</span>
@@ -221,10 +261,5 @@
 
 
     <!-- <br><br><br><br> -->
-    <footer>
-      <hr>
-      <h3>&copy <u>Patent Penguin 2020</u></h3>
-      <hr>
-    </footer>
   </body>
 </html>

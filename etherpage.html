@@ -4,19 +4,27 @@
     <title>Main Dashboard</title>
     <link rel="icon" href="img/logo-white.png">
     <link href="mainDashboardStyleSheet.css" rel="stylesheet">
+<<<<<<< HEAD
     <link href="ether.css" rel="stylesheet">
+=======
+>>>>>>> 26660be3cbf331af52ecfcbd4b1dfcc251ce65a0
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="etherpad.js"></script>
   </head>
 
   <body>
     <!-- Top Nav Bar -->
+<<<<<<< HEAD
     <!-- <div class="topnav">
+=======
+    <div class="topnav">
+>>>>>>> 26660be3cbf331af52ecfcbd4b1dfcc251ce65a0
       <input type="search" placeholder="Search">
       <a class="right">
         <p style="margin-bottom: 20px;">Welcome, User</p>
         <img src="img/account.png" style="width: 25px; height: 25px; padding: 10px; margin-bottom: 10px;">
       </a>
+<<<<<<< HEAD
     </div> -->
 
     <!-- Left Nav Bar -->
@@ -72,6 +80,46 @@
 $('#examplePadBasic').pad({'padId':'test'});
 
 </script>
+=======
+    </div>
+
+    <!-- Left Nav Bar -->
+    <div class="leftnav">
+      <a><img src="img/logo-white.png" style="width: 55px; height: 55px; margin-top: 12px;"><span class="tooltiptext">Home</span></a>
+      <a style="position: absolute; top: 80px;"><img src="img/dashboard.png" style="width: 54px; height: 42px; margin-top: 19px;"><span class="tooltiptext">Dashboard</span></a>
+      <a style="position: absolute; top: 160px;"><img src="img/communication.png" style="width: 55px; height:49px; margin-top: 15px;"><span class="tooltiptext">Communication</span></a>
+      <a style="position: absolute; top: 240px;"><img src="img/applications.png" style="width: 55px; height:49px; margin-top: 15px;"><span class="tooltiptext">Applications</span></a>
+      <a style="position: absolute; top: 320px;"><img src="img/notifications.png" style="width: 50px; height:49px; margin-top: 15px;"><span class="tooltiptext">Notifications</span></a>
+      <a style="position: absolute; top: 400px;"><img src="img/uspto.png" style="width: 54px; height:51px; margin-top: 15px;"><span class="tooltiptext">USPTO</span></a>
+      <a style="position: absolute; top: 480px;"><img src="img/editor.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">Editor</span></a>
+      <a style="position: absolute; bottom: 80px;"><img src="img/help.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">Help</span></a>
+      <a style="position: absolute; bottom: 0px;"><img src="img/contact.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">Contact</span></a>
+    </div>
+    <div id="examplePadBasic"></div>
+
+          <h2>Example #2: Sets the pad id, some more parameters and puts the pad in the div</h2>
+          <pre>$('#examplePadIntense').pad({'padId':'test2','showChat':'true'});</pre>
+          <div id="examplePadIntense"></div>
+
+          <h2>Example #3: Sets the pad id, some plugin parameters and puts the pad in the div</h2>
+          <pre>$('#examplePadPlugins').pad({'padId':'test3','plugins':{'pageview':'true'}});</pre>
+          <div id="examplePadPlugins"></div>
+
+          <h2>Example #4: Gets the padContents from Example #2</h2>
+          <pre>$('#examplePadIntense').pad({'getContents':'exampleGetContents'});</pre>
+          <div id="exampleGetContents"><a id="contents" onClick="$('#examplePadIntense').pad({'getContents':'exampleGetContents'});">Click me to Replace me with the pad contents</a></div>
+
+    <script type="text/javascript">
+          // The most basic example
+  	$('#examplePadBasic').pad({'padId':'test'}); // sets the pad id and puts the pad in the div
+
+          // A slightly more intense example
+          $('#examplePadIntense').pad({'padId':'test2','showChat':'true'}); // sets the pad id and puts the pad in the div
+
+          // An example with plugin parameters
+          $('#examplePadPlugins').pad({'padId':'test3','plugins':{'pageview':'true'}}); // sets the pad id, some plugin parameters, and puts the pad in the div
+  	</script>
+>>>>>>> 26660be3cbf331af52ecfcbd4b1dfcc251ce65a0
 
   </body>
 </html>
