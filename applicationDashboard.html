@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application Dashboard</title>
+    <link rel="icon" href="img/logo-white.png">
+    <link href="appDashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- Top Nav Bar -->
+    <div class="topnav">
+      <input type="search" placeholder="Search">
+      <a class="right">
+        <p style="margin-bottom: 20px;">Welcome, User</p>
+        <img src="img/account.png" style="width: 25px; height: 25px; padding: 10px; margin-bottom: 10px;">
+      </a>
+    </div>
+
+    <!-- Left Nav Bar -->
+    <div class="leftnav">
+      <a><img src="img/logo-white.png" style="width: 55px; height: 55px; margin-top: 12px;"><span class="tooltiptext">Home</span></a>
+      <a style="position: absolute; top: 80px;"><img src="img/dashboard.png" style="width: 54px; height: 42px; margin-top: 19px;"><span class="tooltiptext">Dashboard</span></a>
+      <a style="position: absolute; top: 160px;"><img src="img/communication.png" style="width: 55px; height:49px; margin-top: 15px;"><span class="tooltiptext">Communication</span></a>
+      <a style="position: absolute; top: 240px;"><img src="img/applications.png" style="width: 55px; height:49px; margin-top: 15px;"><span class="tooltiptext">Applications</span></a>
+      <a style="position: absolute; top: 320px;"><img src="img/notifications.png" style="width: 50px; height:49px; margin-top: 15px;"><span class="tooltiptext">Notifications</span></a>
+      <a style="position: absolute; top: 400px;"><img src="img/uspto.png" style="width: 54px; height:51px; margin-top: 15px;"><span class="tooltiptext">USPTO</span></a>
+      <a style="position: absolute; top: 480px;"><img src="img/editor.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">Editor</span></a>
+      <a style="position: absolute; bottom: 80px;"><img src="img/help.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">Help</span></a>
+      <a style="position: absolute; bottom: 0px;"><img src="img/contact.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">Contact</span></a>
+    </div>
+
+    <!-- Page Title -->
+    <h1 style="margin-left: 120px; display: inline-block;">Application #94 Status...</h1>
+
+    <!-- Settings -->
+    <button class="settings-button" style="display: inline-block; float: right; margin-right: 50px; margin-top: 15px; font-size: 25px;"><i class="fa fa-cog"></i></button>
+
+    <!-- Timeline -->
+    <div id="timeline" class="module" align="left" style="height: 480px; margin-left: 130px; display: inline-block;">
+      <h3 style="margin-top: 0px; display: inline-block;">Timeline</h3>
+      <button class="settings-button" style="display: inline-block; float: right; font-size: 20px; background-color: #f2f2f2"><i class="fa fa-ellipsis-h"></i></button>
+
+      <h4>Application Info</h4>
+      <h6 style="display: inline-block;">
+        Application for the patent #82, the Flux Capacitor. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </h6>
+
+      <h4>Client Info</h4>
+      <h6 style="display: inline-block;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.
+      </h6>
+
+
+      <h4>Attorney Info</h4>
+      <h6 style="display: inline-block;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.
+      </h6>
+
+    </div>
+
+    <!-- Notifications -->
+    <div id="notifications" class="module" align="left" style="height: 480px; margin-left: 20px; display: inline-block; vertical-align: top;">
+
+      <h1 style="text-align: center;">Deadline</h1>
+      <h3 style="text-align: center;">12/06/2020</h3>
+      <br>
+      <h1 style="text-align: center;">Status:</h1>
+      <h3 style="text-align: center;">Pending Client approval</h3>
+      <br>
+      <h1 style="display: table; margin-top: 0px;">USPTO Status:</h1>
+      <h4 style="display: inline-block;">App 82</h4><h4 style="float: right; display: inline-block;">Recieved</h4>
+      <div id="progressbar"><div style="width: 30%"></div></div>
+    </div>
+
+    <!-- Document tracker -->
+    <!-- Applications -->
+    <div id="applications" class="module" align="left" style="height: 250px; width: 85%; margin-left: 130px; margin-top: 20px; display: table;">
+      <h3 style="margin-top: 0px;">Documents</h3>
+
+      <table id="items">
+        <tr>
+          <th>ID#</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Type</th>
+          <th>Last modified</th>
+        </tr>
+        <tr>
+          <td>Doc #666</td>
+          <td>Initial filing for patent</td>
+          <td>Walter</td>
+          <td>Filing document</td>
+          <td>10/31/2020</td>
+        </tr>
+        <tr>
+          <td>Doc #667</td>
+          <td>Drawing #1</td>
+          <td>Dave</td>
+          <td>Technical drawing</td>
+          <td>10/16/2020</td>
+        </tr>
+        <tr>
+          <td>Doc #400</td>
+          <td>Provisional filing for patent</td>
+          <td>Dan</td>
+          <td>Provisional Patent Document</td>
+          <td>8/1/2020</td>
+        </tr>
+      </table>
+    </div>
+
+    <br><br>
+
+    <!-- Script for resizing page elements -->
+    <script>
+      function resizeElements() {
+        document.getElementById("timeline").style.width = (window.innerWidth / 1.6) + "px";
+        document.getElementById("status-bar").style.width = (window.innerWidth / 2.5) + "px";
+        document.getElementById("messages").style.width = (window.innerWidth / 2.5) + "px";
+        document.getElementById("notifications").style.width = (window.innerWidth / 5.75) + "px";
+        document.getElementById("applications").style.width = (window.innerWidth / 1.185) + "px";
+
+        document.getElementById("submit0").style.marginLeft = (window.innerWidth / 7.9) + "px";
+        document.getElementById("editing0").style.marginLeft = (window.innerWidth / 7.9) + "px";
+        document.getElementById("review0").style.marginLeft = (window.innerWidth / 7.9) + "px";
+        document.getElementById("approval0").style.float = "right";
+
+        document.getElementById("submit1").style.marginLeft = (window.innerWidth / 7.9) + "px";
+        document.getElementById("editing1").style.marginLeft = (window.innerWidth / 7.9) + "px";
+        document.getElementById("review1").style.marginLeft = (window.innerWidth / 7.9) + "px";
+        document.getElementById("approval1").style.float = "right";
+
+        document.getElementById("submit2").style.marginLeft = (window.innerWidth / 7.9) + "px";
+        document.getElementById("editing2").style.marginLeft = (window.innerWidth / 7.9) + "px";
+        document.getElementById("review2").style.marginLeft = (window.innerWidth / 7.9) + "px";
+        document.getElementById("approval2").style.float = "right";
+      }
+    </script>
+
+    <!-- Initial sizing of elements -->
+    <script>resizeElements()</script>
+
+    <!-- Listener to call resizeElements -->
+    <script>window.addEventListener("resize", resizeElements);</script>
+
+  </body>
+</html>
