@@ -6,7 +6,7 @@
     <link href="appDashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-
+  <!-- Add plus/minus bar for documents, change document name, add claims, drawings, other thingy -->
   <body>
     <!-- Top Nav Bar -->
     <div class="topnav">
@@ -43,7 +43,7 @@
 
       <h4>Application Info</h4>
       <h6 style="display: inline-block;">
-        Application for the patent #82, the Flux Capacitor. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Application for the patent #94, the Flux Capacitor. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </h6>
 
       <h4>Client Info</h4>
@@ -69,47 +69,48 @@
       <h3 style="text-align: center;">Pending Client approval</h3>
       <br>
       <h1 style="display: table; margin-top: 0px;">USPTO Status:</h1>
-      <h4 style="display: inline-block;">App 82</h4><h4 style="float: right; display: inline-block;">Recieved</h4>
+      <h4 style="display: inline-block;">App 94</h4><h4 style="float: right; display: inline-block;">Recieved</h4>
       <div id="progressbar"><div style="width: 30%"></div></div>
     </div>
 
     <!-- Document tracker -->
-    <!-- Applications -->
+    <!-- Documents -->
+    <!-- plus/minus, claims drawings, applications -->
     <div id="applications" class="module" align="left" style="height: 250px; width: 85%; margin-left: 130px; margin-top: 20px; display: table;">
-      <h3 style="margin-top: 0px;">Documents</h3>
-
-      <table id="items">
-        <tr>
-          <th>ID#</th>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Type</th>
-          <th>Last modified</th>
-        </tr>
-        <tr>
-          <td>Doc #666</td>
-          <td>Initial filing for patent</td>
-          <td>Walter</td>
-          <td>Filing document</td>
-          <td>10/31/2020</td>
-        </tr>
-        <tr>
-          <td>Doc #667</td>
-          <td>Drawing #1</td>
-          <td>Dave</td>
-          <td>Technical drawing</td>
-          <td>10/16/2020</td>
-        </tr>
-        <tr>
-          <td>Doc #400</td>
-          <td>Provisional filing for patent</td>
-          <td>Dan</td>
-          <td>Provisional Patent Document</td>
-          <td>8/1/2020</td>
-        </tr>
-      </table>
+      <h3 style="margin-top: 0px; display: inline-block">Documents</h3>
+      <button class="settings-button" style="display: inline-block; float: right; font-size: 20px; margin-right: 0px; margin-top: -10px; background-color: #f2f2f2"><i class="fa fa-trash"></i></button>
+      <button class="settings-button" style="display: inline-block; float: right; font-size: 20px; margin-right: 0px; margin-top: -10px; background-color: #f2f2f2"><i class="fa fa-plus"></i></button>
+            <table id="items">
+              <tr>
+                <th>ID#</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Type</th>
+                <th>Last modified</th>
+              </tr>
+              <tr>
+                <td>Doc #666</td>
+                <td>Initial Claim</td>
+                <td>Walter</td>
+                <td>Claim</td>
+                <td>10/31/2020</td>
+              </tr>
+              <tr>
+                <td>Doc #667</td>
+                <td>Drawing #1</td>
+                <td>Dave</td>
+                <td>Drawing</td>
+                <td>10/16/2020</td>
+              </tr>
+              <tr>
+                <td>Doc #400</td>
+                <td>Provisional filing for patent</td>
+                <td>Dan</td>
+                <td>Application</td>
+                <td>8/1/2020</td>
+              </tr>
+            </table>
     </div>
-
     <br><br>
 
     <!-- Script for resizing page elements -->
