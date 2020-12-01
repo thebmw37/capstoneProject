@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Financials</title>
+    <link rel="icon" href="img/logo-white.png">
+    <link href="financialsStyleSheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- Top Nav Bar -->
+    <div class="topnav">
+      <input type="search" placeholder="Search">
+      <a class="right">
+        <p style="margin-bottom: 20px;">Welcome, User</p>
+        <img src="img/account.png" style="width: 25px; height: 25px; padding: 10px; margin-bottom: 10px;">
+      </a>
+    </div>
+
+    <!-- Left Nav Bar -->
+    <div class="leftnav">
+      <a><img src="img/logo-white.png" style="width: 55px; height: 55px; margin-top: 12px;"><span class="tooltiptext">Home</span></a>
+      <a style="position: absolute; top: 80px;"><img src="img/dashboard.png" style="width: 54px; height: 42px; margin-top: 19px;"><span class="tooltiptext">Dashboard</span></a>
+      <a style="position: absolute; top: 160px;"><img src="img/communication.png" style="width: 55px; height:49px; margin-top: 15px;"><span class="tooltiptext">Communication</span></a>
+      <a style="position: absolute; top: 240px;"><img src="img/applications.png" style="width: 55px; height:49px; margin-top: 15px;"><span class="tooltiptext">Applications</span></a>
+      <a style="position: absolute; top: 320px;"><img src="img/notifications.png" style="width: 50px; height:49px; margin-top: 15px;"><span class="tooltiptext">Notifications</span></a>
+      <a style="position: absolute; top: 400px;"><img src="img/uspto.png" style="width: 54px; height:51px; margin-top: 15px;"><span class="tooltiptext">USPTO</span></a>
+      <a style="position: absolute; top: 480px;"><img src="img/editor.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">Editor</span></a>
+      <a style="position: absolute; bottom: 80px;"><img src="img/help.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">Help</span></a>
+      <a style="position: absolute; bottom: 0px;"><img src="img/contact.png" style="width: 43px; height:45px; margin-top: 15px;"><span class="tooltiptext">Contact</span></a>
+    </div>
+
+    <!-- Page Title -->
+    <h1 style="margin-left: 120px; display: inline-block;">Financial Information</h1>
+
+    <!-- Settings -->
+    <button class="settings-button" style="display: inline-block; float: right; margin-right: 50px; margin-top: 15px; font-size: 25px;"><i class="fa fa-cog"></i></button>
+
+    <!-- Applications -->
+    <div id="applications" class="module" align="left" style="height: 250px; width: 83%; margin-left: 130px; margin-top: 20px; display: table;">
+      <h3 style="margin-top: 0px; display: inline-block">Applications</h3>
+      <button class="settings-button" style="display: inline-block; float: right; font-size: 20px; margin-right: 0px; margin-top: -10px; background-color: #f2f2f2"><i class="fa fa-trash"></i></button>
+      <button class="settings-button" style="display: inline-block; float: right; font-size: 20px; margin-right: 0px; margin-top: -10px; background-color: #f2f2f2"><i class="fa fa-plus"></i></button>
+
+      <table id="items">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Hours</th>
+          <th>Rate</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td><a href="404.html">App 82</a></td>
+          <td>Non-Provisional</td>
+          <td>49</td>
+          <td>$125</td>
+          <td>$6,125</td>
+        </tr>
+        <tr>
+          <td><a href="404.html">App 77</a></td>
+          <td>Provisional</td>
+          <td>25</td>
+          <td>$75</td>
+          <td>$1,875</td>
+        </tr>
+        <tr>
+          <td><a href="applicationDashboard.html">App 94</a></td>
+          <td>Provisional</td>
+          <td>31</td>
+          <td>$75</td>
+          <td>$2,325</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Financial Documents -->
+    <div id="financial_documents" class="module" align="left" style="height: 250px; width: 50%; margin-left: 130px; margin-top: 20px; display: table;">
+      <h3 style="margin-top: 0px; display: inline-block">Financial Documents</h3>
+      <button class="settings-button" style="display: inline-block; float: right; font-size: 20px; margin-right: 0px; margin-top: -10px; background-color: #f2f2f2"><i class="fa fa-trash"></i></button>
+      <button class="settings-button" style="display: inline-block; float: right; font-size: 20px; margin-right: 0px; margin-top: -10px; background-color: #f2f2f2"><i class="fa fa-plus"></i></button>
+
+      <table id="items">
+        <tr>
+          <th>Name</th>
+          <th>Line Item Receipt</th>
+        </tr>
+        <tr>
+          <td><a href="404.html">App 82</a></td>
+          <td><a href="404.html">app82receipt.pdf</a></td>
+        </tr>
+        <tr>
+          <td><a href="404.html">App 77</a></td>
+          <td><a href="404.html">app77receipt.pdf</a></td>
+        </tr>
+        <tr>
+          <td><a href="applicationDashboard.html">App 94</a></td>
+          <td><a href="404.html">app94receipt.pdf</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <br><br>
+
+    <!-- Script for resizing page elements -->
+    <script>
+      function resizeElements() {
+
+      }
+    </script>
+
+    <!-- Initial sizing of elements -->
+    <script>resizeElements()</script>
+
+    <!-- Listener to call resizeElements -->
+    <script>window.addEventListener("resize", resizeElements);</script>
+
+  </body>
+</html>
