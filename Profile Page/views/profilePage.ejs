@@ -22,6 +22,10 @@
                   <span class="dropdown__icon"><i class="far fa-user"></i></span>
                   <a href="/profile"><span class="dropdown__title">my profile</span></a>
                 </li>
+              </li><li class="dropdown__list-item">
+                <span class="dropdown__icon"><i class="far fa-user"></i></span>
+                <a href="/dashboard"><span class="dropdown__title">Dashboard</span></a>
+              </li>
                 <!-- <li class="dropdown__list-item">
                   <span class="dropdown__icon"><i class="fas fa-clipboard-list"></i></span>
                   <span class="dropdown__title">my account</span>
@@ -66,6 +70,12 @@
               </div>
             </div>
           </div>
+
+          <style>
+              *{
+              	box-sizing: border-box;
+              }
+              </style>
         <div class="main-overview">
           <div class="overviewCard">
             <div class="overviewCard-icon--document">
@@ -73,8 +83,12 @@
             </div>
             <div class = 'left_div'>
               <h3 class="overviewCard-title text-light">  Name: <strong><%=data[0].firstname%> </strong></h3>
-              <p >  Email: <span class="overviewCard-subtitle">Brian.Ellis@kirkland-ellis.com </span></p>
-            </div>
+              <p>  Email: <span class="overviewCard-subtitle">Brian.Ellis@kirkland-ellis.com </span></p>
+              <div class="openBtn">
+                <button class="openButton" onclick="openForm()"><strong>Edit</strong></button>
+              </div>
+              </div>
+
             <div class="overviewCard-description">
               <h3 class="overviewCard-title text-light"> Address:</h3>
               <p class="overviewCard-subtitle" href = "">175 Regent Administrative Center<br>
@@ -83,6 +97,25 @@
           </div>
 
           </div>
+
+          <div class="loginPopup">
+            <div class="formPopup" id="popupForm">
+              <form action="/profilePage" class="formContainer">
+                <h2>Edit Profile Information</h2>
+                <label for="email">
+                  <strong>E-mail</strong>
+                </label>
+                <input type="text" id="email" placeholder="Your Email" name="email" required>
+                <label for="name">
+                  <strong>Name</strong>
+                </label>
+                <input type="text" id="name" placeholder="Your Name" name="name" required>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+          </div>
+
           <div class="main-overview">
             <div class="overviewCard">
               <div class="overviewCard-icon--document">
@@ -95,6 +128,18 @@
                 <p class="overviewCard-subtitle "> 300 North LaSalle, Chicago, IL 60654 </p>
               </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
             </div><!-- /.main-cards -->
             <div class="main-overview">
@@ -112,6 +157,55 @@
                 </div>
               </div>
             </div>
+
+
+
+
+            <div class = "documents-left">
+                        <div class="card">
+                          <div class="card__header">
+                            <div class="card__header-title text-light">Recent <strong>Documents</strong>
+                              <a href="#" class="card__header-link text-bold">View All</a>
+                            </div>
+                            <div class="settings">
+                              <div class="settings__block"><i class="fas fa-edit">Edit</i></div>
+                              <div class="settings__block"><i class="fas fa-cog"></i></div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="documents">
+                              <div class="document">
+                                <div class="document__img"></div>
+                                <div class="document__title">Application Name</div>
+                                <div class="document__date">Application Date</div>
+                              </div>
+                              <div class="document">
+                                <div class="document__img"></div>
+                                <div class="document__title">Application Name</div>
+                                <div class="document__date">Application Date</div>
+                              </div>
+                              <div class="document">
+                                <div class="document__img"></div>
+                                <div class="document__title">Application Name</div>
+                                <div class="document__date">Application Date</div>
+                              </div>
+                              <div class="document">
+                                <div class="document__img"></div>
+                                <div class="document__title">Application Name</div>
+                                <div class="document__date">Application Date</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
         </main>
         <aside class="sidenav">
           <div class="sidenav__brand">
@@ -304,6 +398,7 @@
                   </li>
             </ul>
           </div>
+
         </aside>
 
         </main>
@@ -312,6 +407,16 @@
           <p><span class="footer__copyright">&copy;</span> 2020 PDS</p>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        function openForm() {
+          document.getElementById("popupForm").style.display = "block";
+        }
+        function closeForm() {
+          document.getElementById("popupForm").style.display = "none";
+        }
+        </script>
+
+
         <script>
             /* Scripts for css grid dashboard */
 
