@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="md_css.css">
+    
     <title>Main Dashboard</title>
 </head>
 <body>
     <div class="grid">
         <header class="header">
           <i class="fas fa-bars header__menu"></i>
+
           <div class="header__search">
-            <input class="header__input" placeholder="Search..." />
+            <form action="md.html" method="GET" id="frmSearch" class="srch">
+            <input class="header__input" id = "txtSearch" placeholder="Search..." />
+            </form>
           </div>
+  
           <div class="header__avatar">
             <div class="dropdown">
               <ul class="dropdown__list">
@@ -305,15 +310,22 @@
             </div>
           </div>
           <div class="main-overview">
+
             <div class="overviewCard">
+              <a href="appDB.html">
               <div class="overviewCard-icon overviewCard-icon--document">
                  <i class="far fa-file-alt"></i>
               </div>
+              </a>
+
+              <a href="appDB.html">
               <div class="overviewCard-description">
                 <h3 class="overviewCard-title text-light">Recent <strong>Document</strong></h3>
                 <p class="overviewCard-subtitle">Case J-072020FRANK</p>
               </div>
+              </a>
             </div>
+
             <div class="overviewCard">
               <div class="overviewCard-icon overviewCard-icon--calendar">
                  <i class="far fa-calendar-check"></i>
@@ -323,25 +335,88 @@
                 <p class="overviewCard-subtitle">Case J-092020Lor.. +2</p>
               </div>
             </div>
+
+            
             <div class="overviewCard">
-              <div class="overviewCard-icon overviewCard-icon--mail">
-                 <i class="far fa-envelope"></i>
-              </div>
-              <div class="overviewCard-description">
-                <h3 class="overviewCard-title text-light">Recent <strong>Notifications</strong></h3>
-                <a href="cases-notifications/notifications.html"class="overviewCard-subtitle">+10</a>
-              </div>
+              <a href="cases-notifications/notifications.html">
+                <div class="overviewCard-icon overviewCard-icon--mail">
+                  <i class="far fa-envelope"></i>
+                </div>
+              </a>
+                <a href="cases-notifications/notifications.html">
+                <div class="overviewCard-description">
+                  <h3 class="overviewCard-title text-light">Recent <strong>Notifications</strong></h3>
+                  <p class="overviewCard-subtitle">+10</p>
+                </div>
+              </a>
             </div>
+            
+
+             
+
             <div class="overviewCard">
               <div class="overviewCard-icon overviewCard-icon--photo">
                  <i class="far fa-file-image"></i>
               </div>
               <div class="overviewCard-description">
+                <a id = "myBtn">
                 <h3 class="overviewCard-title text-light">Quick <strong>Links</strong></h3>
                 <p class="overviewCard-subtitle">Private PAIR, DocEX, Co.. </p>
+                </a>
               </div>
             </div>
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">
+                  <h2> Some Helpful Links </h2>
+                  <ul>
+                    <li><a href="https://www.uspto.gov/learning-and-resources/portal-applications" target="_blank">Private PAIR</a></li>
+                    <li><a href="https://www.docex.com/" target="_blank">DocEx</a></li>
+                  </ul>
+                </span>
+
+              </div>
+            
+            </div>
+
+
+            <script>
+              var modal = document.getElementById("myModal");
+
+              // Get the button that opens the modal
+              var btn = document.getElementById("myBtn");
+
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[0];
+
+              // When the user clicks the button, open the modal 
+              btn.onclick = function() {
+                modal.style.display = "block";
+              }
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() {
+                modal.style.display = "none";
+              }
+
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                if (event.target == modal) {
+                  modal.style.display = "none";
+                }
+              }
+
+
+            </script>
+            
+
+
           </div> <!-- /.main__overview -->
+
+
+
           <div class="main__cards">
             <div class="card">
               <div class="card__header">
@@ -451,12 +526,12 @@
             <div class="card">
               <div class="card__header">
                 <div class="card__header-title text-light">Recent <strong>Messages</strong>
-                  <a href="/cases-notifications/notifications.html" class="card__header-link text-bold">View All</a>
+                  <a href="messagesView.html" class="card__header-link text-bold">View All</a>
                 </div>
-                <div class="settings">
-                  <div class="settings__block"><i class="fas fa-edit"></i>EDIT</div>
+                <!-- <div class="settings">
+                  <div class="settings__block"><i class="fas fa-edit"></i></div>
                   <div class="settings__block"><i class="fas fa-cog"></i></div>
-                </div>
+                </div> -->
               </div>
               <div id="messages" style="font-size: 20px;">
                 <hr>
