@@ -418,6 +418,14 @@ html, body {
   background-image: url("email.png");
   background-size: 60px 60px;
 }
+.overviewCard-icon--deadline {
+  background-image: url("deadline.png");
+  background-size: 60px 60px;
+}
+.overviewCard-icon--OA {
+  background-image: url("caseIcon.png");
+  background-size: 60px 60px;
+}
 .overviewCard-icon--text {
   background-image: url("text2.png");
   background-size: 60px 60px;

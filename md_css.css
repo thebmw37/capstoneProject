@@ -625,6 +625,51 @@ html, body {
  .document__date {
 	 font-size: 10px;
 }
+
+.status__img__green {
+	width: 105px;
+	height: 136px;
+	background-image: url("Images/green_circle.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 105px 105px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+.status__img__yellow {
+	width: 105px;
+	height: 136px;
+	background-image: url("Images/yellow_circle.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 105px 105px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+.status__img__red {
+	width: 105px;
+	height: 136px;
+	background-image: url("Images/red_circle.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 122px 122px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+.status__img:hover {
+	transform: translateY(-4px);
+}
+.status__title {
+	margin: 8px 0 2px;
+	color: #777;
+}
+.status__date {
+	font-size: 10px;
+}
+
  .footer {
 	 grid-area: footer;
 	 display: flex;
@@ -680,7 +725,7 @@ html, body {
 		 align-items: flex-start;
 	}
 }
- 
+
 
 /* The Modal (background) */
 .modal {
@@ -695,7 +740,7 @@ html, body {
 	overflow: auto; /* Enable scroll if needed */
 
 }
-  
+
   /* Modal Content */
 .modal-content {
 	background-color: #fefefe;
@@ -719,60 +764,3 @@ html, body {
 	text-decoration: none;
 	cursor: pointer;
 }
-
-/* Popup container - can be anything you want */
-.popup {
-	position: relative;
-	display: inline-block;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-  }
-  
-  /* The actual popup */
-  .popup .popuptext {
-	visibility: hidden;
-	width: 200px;
-	background-color: #555;
-	color: #fff;
-	text-align: center;
-	border-radius: 6px;
-	padding: 8px 0;
-	position: absolute;
-	z-index: 1;
-	bottom: 125%;
-	left: 50%;
-	margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup .popuptext::after {
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class - hide and show the popup */
-  .popup .show {
-	visibility: visible;
-	-webkit-animation: fadeIn 1s;
-	animation: fadeIn 1s;
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-	from {opacity: 0;} 
-	to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-	from {opacity: 0;}
-	to {opacity:1 ;}
-  }

@@ -37,7 +37,7 @@
         <aside class="sidenav">
           <div class="sidenav__brand">
             <i class="fas fa-feather-alt sidenav__brand-icon"></i>
-            <a class="sidenav__brand-link" href="https://penguindocketing.webflow.io/">PDS<span class="text-light"></span></a>
+            <a class="sidenav__brand-link" href="../md.html">PDS LLC<span class="text-light"></span></a>
             <i class="fas fa-times sidenav__brand-close"></i>
           </div>
           <div class="sidenav__profile">
@@ -47,7 +47,7 @@
           <div class="row row--align-v-center row--align-h-center">
             <ul class="navList">
               <li class="navList__heading">Dashboard<i class="far fa-file-alt"></i></li>
-                <li>
+                <!--<li>
                 <div class="navList__subheading row row--align-v-center">
                   <span class="navList__subheading-icon"><i class="fas fa-briefcase-medical"></i></span>
                   <span class="navList__subheading-title">Messages</span>
@@ -57,7 +57,7 @@
                   <li class="subList__item">Inbox</li>
                   <li class="subList__item">Create New</li>
                 </ul>
-              </li>
+              </li>-->
               <li>
                 <div class="navList__subheading row row--align-v-center">
                   <span class="navList__subheading-icon"><i class="fas fa-plane-departure"></i></span>
@@ -119,7 +119,7 @@
               <li>
                 <div class="navList__subheading row row--align-v-center">
                   <span class="navList__subheading-icon"><i class="fas fa-mountain"></i></span>
-                  <span class="navList__subheading-title">In Progress</span>
+                  <span class="navList__subheading-title">Active</span>
                 </div>
                 <ul class="subList subList--hidden">
                   <li class="subList__item">App 1</li>
@@ -137,92 +137,18 @@
                   <li class="subList__item">Add/Delete</li>
                 </ul>
               </li>
-              <li>
-                <div class="navList__subheading row row--align-v-center">
-                  <span class="navList__subheading-icon"><i class="fas fa-graduation-cap"></i></span>
-                  <span class="navList__subheading-title">What needs to be done?</span>
-                </div>
-                <ul class="subList subList--hidden">
-                  <li class="subList__item">Add/Delete</li>
-                  <li class="subList__item">Add/Delete</li>
-                  <li class="subList__item">Add/Delete</li>
-                  <li class="subList__item">Add/Delete</li>
-                </ul>
-              </li>
+
 
               <li class="navList__heading">Notifications<i class="fas fa-chart-bar"></i></li>
-              <li>
-                <div class="navList__subheading row row--align-v-center">
-                  <span class="navList__subheading-icon"><i class="fas fa-credit-card"></i></span>
-                  <span class="navList__subheading-title">Application Deadlines</span>
-                </div>
-                <ul class="subList subList--hidden">
-                  <li class="subList__item">Add/Delete</li>
-                  <li class="subList__item">Add/Delete</li>
-                  <li class="subList__item">Add/Delete</li>
-                  <li class="subList__item">Add/Delete</li>
-                </ul>
-              </li>
-              <li>
-                <div class="navList__subheading row row--align-v-center">
-                  <span class="navList__subheading-icon"><i class="fas fa-phone"></i></span>
-                  <span class="navList__subheading-title">New Applications</span>
-                </div>
-                <ul class="subList subList--hidden">
-                  <li class="subList__item"></li>
-                  <li class="subList__item">See new applications</li>
-                  <li class="subList__item">Add/Delete</li>
-                  <li class="subList__item">Add/Delete</li>
-                </ul>
-              </li>
-              <li>
-                <div class="navList__subheading row row--align-v-center">
-                  <span class="navList__subheading-icon"><i class="fas fa-plane"></i></span>
-                  <span class="navList__subheading-title">Document Editor</span>
-                </div>
-                <ul class="subList subList--hidden">
-                  <li class="subList__item">Editor Home</li>
-                  <li class="subList__item">Create New Document</li>
-                  <li class="subList__item">Edit Document</li>
-                  <li class="subList__item">Add/Delete</li>
-                </ul>
-              </li>
+              <li class="subList__item" onclick="location.href='notifications.html'">Messages</li>
+              <li class="subList__item" onclick="location.href='deadlines.html'">Deadlines</li>
 
               <li class="navList__heading">USPTO Status<i class="fas fa-calendar-alt"></i></li>
-              <li>
-                <div class="navList__subheading row row--align-v-center">
-                  <span class="navList__subheading-icon"><i class="fas fa-wine-glass-alt"></i></span>
-                  <span class="navList__subheading-title">Current Submissions</span>
-                </div>
-                <ul class="subList subList--hidden">
-                  <li class="subList__item">Add/Delete</li>
-                  <li class="subList__item">Add/Delete</li>
-                  <li class="subList__item">Add/Delete</li>
-                </ul>
-              </li>
-              <li>
-                <div class="navList__subheading row row--align-v-center">
-                  <span class="navList__subheading-icon"><i class="fas fa-school"></i></span>
-                  <span class="navList__subheading-title">Previous Submissions</span>
-                </div>
-                <ul class="subList subList--hidden">
-                  <li class="subList__item">Add/Delete</li>
-                  <li class="subList__item">Add/Delete</li>
-                  <li class="subList__item">Add/Delete</li>
-                </ul>
-              </li>
-              <li>
-                    <div class="navList__subheading row row--align-v-center">
-                      <span class="navList__subheading-icon"><i class="fas fa-users"></i></span>
-                      <span class="navList__subheading-title">Status/Responses</span>
-                    </div>
-                    <ul class="subList subList--hidden">
-                      <li class="subList__item">Add/Delete</li>
-                      <li class="subList__item">Add/Delete</li>
-                      <li class="subList__item">Add/Delete</li>
-                      <li class="subList__item">Add/Delete</li>
-                    </ul>
-                  </li>
+              <li class="subList__item" onclick="location.href='../currentSubmissions.html'">Current Submissions</li>
+              <li class="subList__item" onclick="location.href='../previousSubmissions.html'">Previous Submissions</li>
+              <li class="subList__item" onclick="location.href='../statusResponses.html'">Status/Responses</li>
+
+
             </ul>
           </div>
         </aside>
@@ -237,7 +163,7 @@
             </div>
           </div>
           <div class="main-overview">
-            <div class="overviewCard">
+            <div id="card1" class="overviewCard">
               <div class="overviewCard-icon overviewCard-icon--document">
                  <i class="far fa-file-alt"></i>
               </div>
@@ -247,7 +173,7 @@
               </div>
             </div>
 
-            <div class="overviewCard">
+            <div id="card2" class="overviewCard">
               <div class="overviewCard-icon overviewCard-icon--document">
                  <i class="far fa-file-alt"></i>
               </div>
@@ -257,7 +183,7 @@
               </div>
             </div>
 
-            <div class="overviewCard">
+            <div id="card3" class="overviewCard">
               <div class="overviewCard-icon overviewCard-icon--document">
                  <i class="far fa-file-alt"></i>
               </div>
@@ -267,7 +193,7 @@
               </div>
             </div>
 
-            <div class="overviewCard">
+            <div id="card4" class="overviewCard">
               <div class="overviewCard-icon overviewCard-icon--document">
                  <i class="far fa-file-alt"></i>
               </div>
@@ -381,5 +307,36 @@
 
         </script>
       </div>
+
+      <script>
+        document.getElementById("card1").addEventListener("mouseenter", function() {
+          document.getElementById("card1").innerHTML = "<div class=\"overviewCard-icon overviewCard-icon--document\"><i class=\"far fa-file-alt\"></i></div><div class=\"overviewCard-description\"><h3 class=\"overviewCard-title text-light\"><strong>Applications</strong><p class=\"overviewCard-subtitle\">App 1</p><p class=\"overviewCard-subtitle\">App 2</p></div></div>";
+        });
+        document.getElementById("card1").addEventListener("mouseleave", function() {
+          document.getElementById("card1").innerHTML = "<div class=\"overviewCard-icon overviewCard-icon--document\"><i class=\"far fa-file-alt\"></i></div><div class=\"overviewCard-description\"><h3 class=\"overviewCard-title text-light\">Case <strong>1</strong></h3><p class=\"overviewCard-subtitle\">Updated 3/20</p></div></div>";
+        });
+
+        document.getElementById("card2").addEventListener("mouseenter", function() {
+          document.getElementById("card2").innerHTML = "<div class=\"overviewCard-icon overviewCard-icon--document\"><i class=\"far fa-file-alt\"></i></div><div class=\"overviewCard-description\"><h3 class=\"overviewCard-title text-light\"><strong>Applications</strong><p class=\"overviewCard-subtitle\">App 1</p><p class=\"overviewCard-subtitle\">App 2</p></div></div>";
+        });
+        document.getElementById("card2").addEventListener("mouseleave", function() {
+          document.getElementById("card2").innerHTML = "<div class=\"overviewCard-icon overviewCard-icon--document\"><i class=\"far fa-file-alt\"></i></div><div class=\"overviewCard-description\"><h3 class=\"overviewCard-title text-light\">Case <strong>1</strong></h3><p class=\"overviewCard-subtitle\">Updated 3/17</p></div></div>";
+        });
+
+        document.getElementById("card3").addEventListener("mouseenter", function() {
+          document.getElementById("card3").innerHTML = "<div class=\"overviewCard-icon overviewCard-icon--document\"><i class=\"far fa-file-alt\"></i></div><div class=\"overviewCard-description\"><h3 class=\"overviewCard-title text-light\"><strong>Applications</strong><p class=\"overviewCard-subtitle\">App 1</p><p class=\"overviewCard-subtitle\">App 2</p></div></div>";
+        });
+        document.getElementById("card3").addEventListener("mouseleave", function() {
+          document.getElementById("card3").innerHTML = "<div class=\"overviewCard-icon overviewCard-icon--document\"><i class=\"far fa-file-alt\"></i></div><div class=\"overviewCard-description\"><h3 class=\"overviewCard-title text-light\">Case <strong>1</strong></h3><p class=\"overviewCard-subtitle\">Updated 12:40pm</p></div></div>";
+        });
+
+        document.getElementById("card4").addEventListener("mouseenter", function() {
+          document.getElementById("card4").innerHTML = "<div class=\"overviewCard-icon overviewCard-icon--document\"><i class=\"far fa-file-alt\"></i></div><div class=\"overviewCard-description\"><h3 class=\"overviewCard-title text-light\"><strong>Applications</strong><p class=\"overviewCard-subtitle\">App 1</p><p class=\"overviewCard-subtitle\">App 2</p></div></div>";
+        });
+        document.getElementById("card4").addEventListener("mouseleave", function() {
+          document.getElementById("card4").innerHTML = "<div class=\"overviewCard-icon overviewCard-icon--document\"><i class=\"far fa-file-alt\"></i></div><div class=\"overviewCard-description\"><h3 class=\"overviewCard-title text-light\">Case <strong>1</strong></h3><p class=\"overviewCard-subtitle\">Updated 3:19am</p></div></div>";
+        });
+
+      </script>
 </body>
 </html>
