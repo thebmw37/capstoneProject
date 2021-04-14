@@ -5,20 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="md_css.css">
-    
-    <title>Main Dashboard</title>
+    <title>Application Dashboard</title>
 </head>
 <body>
     <div class="grid">
         <header class="header">
           <i class="fas fa-bars header__menu"></i>
-
           <div class="header__search">
-            <form action="md.html" method="GET" id="frmSearch" class="srch">
-            <!-- <input class="header__input" id = "txtSearch" placeholder="Search..." />d. -->
-            </form>
+            <input class="header__input" placeholder="Search..." />
           </div>
-  
           <div class="header__avatar">
             <div class="dropdown">
               <ul class="dropdown__list">
@@ -32,7 +27,7 @@
                 </li> -->
                 <li class="dropdown__list-item">
                   <span class="dropdown__icon"><i class="fas fa-sign-out-alt"></i></span>
-                  <a href="SignUp_Login.html"><span class="dropdown__title">log out</span></a>
+                  <a href="https://www.penguindocketing.com"><span class="dropdown__title">log out</span></a>
                 </li>
               </ul>
             </div>
@@ -281,10 +276,10 @@
           <div class="main-header">
             <div class="main-header__intro-wrapper">
               <div class="main-header__welcome">
-                <div class="main-header__welcome-title text-light">Welcome, <strong>John</strong></div>
-                <!-- <div class="main-header__welcome-subtitle text-light">How are you today?</div> -->
+                <div class="main-header__welcome-title text-light"><strong>Application Dashboard</strong></div>
+                <div class="main-header__welcome-title text-light">Currently Viewing: Case J-112020ANN</div>
               </div>
-              <div class="quickview">
+              <!-- <div class="quickview">
                 <div class="quickview__item">
                   <div class="quickview__item-total">5</div>
                   <div class="quickview__item-description">
@@ -293,34 +288,32 @@
                   </div>
                 </div>
                 <div class="quickview__item">
-                  <div class="quickview__item-total popup" onclick="myPopUp()">Eloquence
-                    <span class="popuptext" id="myPopup">fluent or persuasive speaking or writing</span>
-                  </div>
+                  <div class="quickview__item-total">12</div>
                   <div class="quickview__item-description">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="text-light">Word of The Day!</span>
+                    <i class="far fa-comment"></i>
+                    <span class="text-light">New Notifications</span>
                   </div>
                 </div>
-              </div>
+                <div class="quickview__item">
+                  <div class="quickview__item-total">Today's Date</div>
+                  <div class="quickview__item-description">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="text-light">Happy Working!</span>
+                  </div>
+                </div>
+              </div> -->
             </div>
           </div>
-          <div class="main-overview">
-
-            <div class="overviewCard">
-              <a href="appDB.html">
+         
+            <!-- <div class="overviewCard">
               <div class="overviewCard-icon overviewCard-icon--document">
                  <i class="far fa-file-alt"></i>
               </div>
-              </a>
-
-              <a href="appDB.html">
               <div class="overviewCard-description">
                 <h3 class="overviewCard-title text-light">Recent <strong>Document</strong></h3>
                 <p class="overviewCard-subtitle">Case J-072020FRANK</p>
               </div>
-              </a>
             </div>
-
             <div class="overviewCard">
               <div class="overviewCard-icon overviewCard-icon--calendar">
                  <i class="far fa-calendar-check"></i>
@@ -330,222 +323,82 @@
                 <p class="overviewCard-subtitle">Case J-092020Lor.. +2</p>
               </div>
             </div>
-
-            
             <div class="overviewCard">
-              <a href="cases-notifications/notifications.html">
-                <div class="overviewCard-icon overviewCard-icon--mail">
-                  <i class="far fa-envelope"></i>
-                </div>
-              </a>
-                <a href="cases-notifications/notifications.html">
-                <div class="overviewCard-description">
-                  <h3 class="overviewCard-title text-light">Recent <strong>Notifications</strong></h3>
-                  <p class="overviewCard-subtitle">+10</p>
-                </div>
-              </a>
+              <div class="overviewCard-icon overviewCard-icon--mail">
+                 <i class="far fa-envelope"></i>
+              </div>
+              <div class="overviewCard-description">
+                <h3 class="overviewCard-title text-light">Recent <strong>Notifications</strong></h3>
+                <p class="overviewCard-subtitle">+10</p>
+              </div>
             </div>
-            
-
-             
-
             <div class="overviewCard">
               <div class="overviewCard-icon overviewCard-icon--photo">
                  <i class="far fa-file-image"></i>
               </div>
               <div class="overviewCard-description">
-                <a id = "myBtn">
                 <h3 class="overviewCard-title text-light">Quick <strong>Links</strong></h3>
                 <p class="overviewCard-subtitle">Private PAIR, DocEX, Co.. </p>
-                </a>
               </div>
             </div>
-            <div id="myModal" class="modal">
-
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">
-                  <h2> Some Helpful Links </h2>
-                  <ul>
-                    <li><a href="https://www.uspto.gov/learning-and-resources/portal-applications" target="_blank">Private PAIR</a></li>
-                    <li><a href="https://www.docex.com/" target="_blank">DocEx</a></li>
-                  </ul>
-                </span>
-
-              </div>
-            
-            </div>
-
-
-            <script>
-              var modal = document.getElementById("myModal");
-
-              // Get the button that opens the modal
-              var btn = document.getElementById("myBtn");
-
-              // Get the <span> element that closes the modal
-              var span = document.getElementsByClassName("close")[0];
-
-              // When the user clicks the button, open the modal 
-              btn.onclick = function() {
-                modal.style.display = "block";
-              }
-
-              // When the user clicks on <span> (x), close the modal
-              span.onclick = function() {
-                modal.style.display = "none";
-              }
-
-              // When the user clicks anywhere outside of the modal, close it
-              window.onclick = function(event) {
-                if (event.target == modal) {
-                  modal.style.display = "none";
-                }
-              }
-
-
-            </script>
-            
-
-
-          </div> <!-- /.main__overview -->
-
-
-
-          <div class="main__cards">
+          </div> -->
+           <!-- /.main__overview -->
+          
             <div class="card">
-              <div class="card__header">
-                <div class="card__header-title text-light">Case <strong>Timeline</strong>
-                  <a href="#" class="card__header-link text-bold">View All</a>
+                <div class="card__header">
+                  <div class="card__header-title text-light"><strong>Applications</strong>
+                    <a href="#" class="card__header-link text-bold">View All</a>
+                  </div>
+                  <div class="settings">
+                    <div class="settings__block"><i class="fas fa-edit">Edit</i></div>
+                    <div class="settings__block"><i class="fas fa-cog"></i></div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="documents">
+                    <div class="document">
+                      <div class="document__img"></div>
+                      <div class="document__title">Senton JNP-A-1</div>
+                      <div class="document__date">03-01-2021</div>
+                    </div>
+                    <div class="document">
+                      <div class="document__img"></div>
+                      <div class="document__title">Senton JC-A-1</div>
+                      <div class="document__date">02-28-2021</div>
+                    </div>
+                    <div class="document">
+                      <div class="document__img"></div>
+                      <div class="document__title">Senton JTM-A-1</div>
+                      <div class="document__date">03-10-2021</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="card__main">
-                <div class="card__row">
-                  <div class="card__icon"><i class="fas fa-gift"></i></div>
-                  <div class="card__time">
-                    <div>today</div>
-                  </div>
-                  <div class="card__detail">
-                    <a href="appDB_Robosock.html">
-                    <div class="card__source text-bold"> Case J-032021MARK</div>
-                    <div class="card__description">ROBOSOCK: New animated puppet for kids</div>
-                    <div class="card__note">03-19-2022</div>
-                  </a>
-                  </div>
-                </div>
-                <div class="card__row">
-                  <div class="card__icon"><i class="fas fa-plane"></i></div>
-                  <div class="card__time">
-                    <div>Tuesday</div>
-                  </div>
-                  <div class="card__detail">
-                    <a href="appDB_Senton.html">
-                    <div class="card__source text-bold">Case J-112020ANN</div>
-                    <div class="card__description">SENTON: The new A.I on your shirt</div>
-                    <div class="card__note">11-19-2021</div>
-                    </a>
-                  </div>
-                </div>
-                <div class="card__row">
-                  <div class="card__icon"><i class="fas fa-book"></i></div>
-                  <div class="card__time">
-                    <div>Thursday</div>
-                  </div>
-                  <div class="card__detail">
-                    <a href="appDB_BirthdayPop.html">
-                    <div class="card__source text-bold">Case J-102020BOB</div>
-                    <div class="card__description">BIRTHDAY POP: A Kids High</div>
-                    <div class="card__note">10-19-2021</div>
-                    </a>
-                  </div>
-                </div>
-                <div class="card__row">
-                  <div class="card__icon"><i class="fas fa-heart"></i></div>
-                  <div class="card__time">
-                    <div>Friday</div>
-                  </div>
-                  <div class="card__detail">
-                    <div class="card__source text-bold">Case J-072020FRANK</div>
-                    <div class="card__description">TELTRON: Your phone on your glasses</div>
-                    <div class="card__note">11-13-2025</div>
-                  </div>
-                </div>
-                <div class="card__row">
-                  <div class="card__icon"><i class="fas fa-heart"></i></div>
-                  <div class="card__time">
-                    <div>Saturday</div>
-                  </div>
-                  <div class="card__detail">
-                    <div class="card__source text-bold">Case J-092020ALLI</div>
-                    <div class="card__description">TERRO LINK: Elderly stabilation device</div>
-                    <div class="card__note">03-22-2024</div>
-                  </div>
-                </div>
+           <div class="card">
+            <div class="card__header">
+              <div class="card__header-title text-light">Case: <strong>J-112020ANN</strong>
               </div>
             </div>
-            <div class="card">
-              <div class="card__header">
-                <div class="card__header-title text-light">Recent <strong>Documents</strong>
-                  <a href="#" class="card__header-link text-bold">View All</a>
-                </div>
-                <div class="settings">
-                  <div class="settings__block"><i class="fas fa-edit">Edit</i></div>
-                  <div class="settings__block"><i class="fas fa-cog"></i></div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="documents">
-                  <div class="document">
-                    <div class="document__img"></div>
-                    <div class="document__title">Robosock JPU-2</div>
-                    <div class="document__date">03-01-2021</div>
-                  </div>
-                  <div class="document">
-                    <div class="document__img"></div>
-                    <div class="document__title">LOREM JPU-4</div>
-                    <div class="document__date">02-28-2021</div>
-                  </div>
-                  <div class="document">
-                    <div class="document__img"></div>
-                    <div class="document__title">Lorem JNP-1</div>
-                    <div class="document__date">03-10-2021</div>
-                  </div>
-                  <div class="document">
-                    <div class="document__img"></div>
-                    <div class="document__title">Senton JNP-3</div>
-                    <div class="document__date">03-12-2021</div>
-                  </div>
-                </div>
-              </div>
+            <div id="messages" style="font-size: 20px;">
+                <h4>&nbsp&nbspApplication Information:</h4>
+                <p>&nbsp&nbspCase for SENTON: AI intergration for you t-shirt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, harum? Nulla, 
+                    necessitatibus exercitationem recusandae nisi culpa possimus vel dolorem suscipit qui nostrum dolor. Numquam animi provident quaerat, accusamus suscipit veniam</p>
+                <p>&nbspLorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptates ab et est sed ipsa placeat ea amet magnam cumque vel, maiores aspernatur dolor, tempore eum atque? Eligendi, earum illo.</p>
+
+                <h4>&nbsp&nbspClient Information:</h4>
+                <p>&nbsp Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas possimus consectetur optio iste sapiente quo aut quasi recusandae esse nisi expedita totam necessitatibus vitae, nam aspernatur? Minima dolores enim quibusdam?</p>
+                <!-- <p>&nbsp Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, labore autem asperiores sequi, quo consequatur exercitationem veritatis blanditiis magnam ad velit dolorum nisi voluptatem deleniti odio quasi tenetur ex accusantium.</p> -->
+                
+                <h4>&nbsp&nbspAttorney Information:</h4>
+                <p>&nbsp&nbspLorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil minima animi velit eveniet similique fugiat? Iste fugit totam molestiae nam id labore cum veniam voluptatem soluta. Repellat, maiores nostrum!</p>
+
             </div>
-            <div class="card">
-              <div class="card__header">
-                <div class="card__header-title text-light">Recent <strong>Messages</strong>
-                  <a href="messagesView.html" class="card__header-link text-bold">View All</a>
-                </div>
-                <!-- <div class="settings">
-                  <div class="settings__block"><i class="fas fa-edit"></i></div>
-                  <div class="settings__block"><i class="fas fa-cog"></i></div>
-                </div> -->
-              </div>
-              <div id="messages" style="font-size: 20px;">
-                <hr>
-                <h3 style="display: inline-block;">&nbspCarl:</h3>
-                <h5 style="display: inline-block;">Hi user, just checking in on the status of my application.</h5>
-                <h5 style="display: inline-block;">&nbsp(10:03 AM)</h5>
-                <hr>
-                <h3 style="display: inline-block;">&nbspMary:</h3>
-                <h5 style="display: inline-block;">I just finished editing my EFS Application, here is the doc</h5>
-                <h5 style="display: inline-block;">&nbsp(9:40 AM)</h5>
-                <hr>
-                <h3 style="display: inline-block;">&nbspSteve:</h3>
-                <h5 style="display: inline-block;">Hey, want to go to Darkhorse tonight?</h5>
-                <h5 style="display: inline-block;">&nbsp(8:58 AM)</h5>
-                <hr>
-              </div>
-            </div>
+          </div>
+          
+
+        
             
-          </div> <!-- /.main-cards -->
+           <!-- /.main-cards -->
         </main>
       
         <footer class="footer">
@@ -646,13 +499,8 @@
           toggleClass(gridEl, GRID_NO_SCROLL_CLASS);
         });
       }
-      function myPopUp() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
       
         </script>
       </div>
-
 </body>
 </html>
